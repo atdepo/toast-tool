@@ -1,22 +1,19 @@
 {
-  "name": "bot-tesi",
+  "name": "toast-app",
   "version": "1.0.0",
-  "description": "un semplice bot da utilizzare per le validazioni dei contributor in una community open source",
-  "main": "toast.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "description": "A recomendation system that uses dominant behaviour to prevent Community Smells",
+  "main": "toast.main.js",
   "keywords": [],
   "author": "atdepo",
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/atdepo/bit-tesi.git"
+    "url": "git+https://github.com/atdepo/toast-tool.git"
   },
   "bugs": {
-    "url": "https://github.com/atdepo/bit-tesi/issues"
+    "url": "https://github.com/atdepo/toast-tool/issues"
   },
-  "homepage": "https://github.com/atdepo/bit-tesi#readme",
+  "homepage": "https://github.com/atdepo/toast-tool#readme",
   "dependencies": {
     "@discordjs/rest": "^2.0.0",
     "discord.js": "^14.12.1",

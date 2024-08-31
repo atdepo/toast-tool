@@ -4,7 +4,7 @@ library(dplyr)
 # RQ2: Quali sono gli Information Needs di cui hanno bisogno i manager per individuare i Community Smell?
 
 column_names <- c("Timestamp","Prolific_ID","Experience_LoneWolf","Impact_HRM_LoneWolf","LoneWolfQ1","LoneWolfQ2","LoneWolfOF","Experience_PrimaDonna","Impact_HRM_PrimaDonna","PrimaDonnaQ1","PrimaDonnaQ2","PrimaDonnaOF","Experience_BlackCloud","Impact_HRM_BlackCloud","BlackCloudQ1","BlackCloudQ2","BlackCloudQ3","BlackCloudOF","Experience_LonesomeArch","Impact_HRM_LonesomeArch","LonesomeArchQ1","LonesomeArchQ2","LonesomeArchQ3","LonesomeArchOF","OtherSmells1","OtherSmells2","OthersCSExperienced")
-practitioners_response <- read_excel("An Empirical Study on Community Smells within Project Teams.xlsx", col_names = column_names, skip=1)
+practitioners_response <- read_excel("An Empirical Study on Community Smells within Project Teams - Answers.xlsx", col_names = column_names, skip=1)
 
 #-----LONE WOLF-----
 

@@ -1,11 +1,9 @@
 // Require the necessary discord.js classes
 const dotenv = require('dotenv')
 const {
-    Client, GatewayIntentBits, Routes, ButtonInteraction, StringSelectMenuBuilder, StringSelectMenuOptionBuilder,
-    ActionRowBuilder, ModalBuilder, TextInputBuilder, TextInputStyle
-} = require('discord.js');
+    Client, GatewayIntentBits, Routes} = require('discord.js');
 const {REST} = require('@discordjs/rest');
-const {commands, questions, gamma, smellsNames} = require('./utilities');
+const {commands, questions, gamma, smellsNames} = require('./toast.utilities');
 const fs = require('fs');
 const {executeInteractionSelectMenu, executeInteractionButtons, executeChatInteraction, executeModalInteraction} = require("./toast.service");
 let jsonUserData = {};
@@ -35,22 +33,22 @@ async function main() {
     try {
         console.log("Started refreshing application (/) commands.");
 
-        await rest.put(Routes.applicationGuildCommands(process.env.CLIENT_ID, process.env.GUILD_ID), {
+        await rest.put(Routes.applicationCommands(process.env.CLIENT_ID), {
             body: commands,
         });
 
         client.login(process.env.DISCORD_TOKEN).then(() => {
-            console.log('Bot is ready');
+            console.log('TOAST is ready!');
             const data = fs.readFileSync('users.json', 'utf8');
             jsonUserData = JSON.parse(data);
         });
 
         client.on('interactionCreate', async interaction => {
 
-            console.log("id " + interaction.id)
-            console.log("username " + interaction.user.username)
-            console.log("channelId " + interaction.channelId)
-            console.log("userId " + interaction.user.id)
+            //console.log("id " + interaction.id)
+            //console.log("username " + interaction.user.username)
+            //console.log("channelId " + interaction.channelId)
+            //console.log("userId " + interaction.user.id)
 
             // if the interaction is a command (/start) and the bot is not already interacting with the user
             if (interaction.isChatInputCommand()) {

@@ -1,12 +1,17 @@
 {
     "users": [
         {
-            "userId": "123456",
+            "userId": "391508969644097536",
             "collaborators": [
                 {
-                    "name": "Liccardo",
-                    "surname": "Rosario",
-                    "collaboratorId": "63061"
+                    "name": "Fabio",
+                    "surname": "Grosso",
+                    "collaboratorId": "#3"
+                },
+                {
+                    "name": "John",
+                    "surname": "Smith",
+                    "collaboratorId": "#ID_1"
                 }
             ]
         }
