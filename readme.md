@@ -21,6 +21,18 @@ TOAST is a proof-of-concept recommendation system designed to make research on c
 1. Enhance practitioners' awareness of potential issues within their teams
 2. Integrate seamlessly with widely-used recommendation systems in software development environments
 
+## 🏛️ Repository Structure
+All the files in this repository are related to the tool source code. In the `data_files` directory
+there are the files that were used during the research project that led to the development of the tool.
+
+Specifically, the directory contains:
+- The file `Selection Survey for Community Smells Recognition - Answers.xlsx` that contains the answers to 
+the exploratory survey used to find the set of managerial figures to interview
+- The file `An Empirical Study on Community Smells within Project Teams - Answers.xlsx` that contains the answers to the two iterations of 
+the main survey, aggregated in a single sheet
+- The file `analisi_rq_2.R` that contains the R scripts used to calculate the metrics used to answer the second research question
+- The file `Coding Sheet.xlsx` that contains the coding process that was followed to identify the symptoms from the literature
+
 ## 🛠️ Setup Instructions
 
 ### Prerequisites

@@ -1,7 +1,7 @@
 library(readxl)
 library(dplyr)
 
-# RQ2: Quali sono gli Information Needs di cui hanno bisogno i manager per individuare i Community Smell?
+# RQ2: How indicative are the identified symptoms of the presence of community smells?
 
 column_names <- c("Timestamp","Prolific_ID","Experience_LoneWolf","Impact_HRM_LoneWolf","LoneWolfQ1","LoneWolfQ2","LoneWolfOF","Experience_PrimaDonna","Impact_HRM_PrimaDonna","PrimaDonnaQ1","PrimaDonnaQ2","PrimaDonnaOF","Experience_BlackCloud","Impact_HRM_BlackCloud","BlackCloudQ1","BlackCloudQ2","BlackCloudQ3","BlackCloudOF","Experience_LonesomeArch","Impact_HRM_LonesomeArch","LonesomeArchQ1","LonesomeArchQ2","LonesomeArchQ3","LonesomeArchOF","OtherSmells1","OtherSmells2","OthersCSExperienced")
 practitioners_response <- read_excel("An Empirical Study on Community Smells within Project Teams - Answers.xlsx", col_names = column_names, skip=1)
@@ -103,12 +103,6 @@ par(bg=NA)
 barplot(tt, names.arg = scala_indicative, col = colori_gradiente, cex.main = 0.8, main = "How significantly does 'The contributor has insufficient communication with the team'\n indicates the presence of the Lone Wolf Community Smell in your experience?")
 dev.copy(png,'lw.png')
 dev.off()
-#pie_values <- table(pie_value_converted$LoneWolfQ1)
-
-percentages <- prop.table(pie_values) * 100
-
-#pie(pie_values, labels = paste0(names(pie_values), "\n  ", round(percentages, 1), "%"),
-   #cex.main=0.9, main = "\nHow significantly does \n'The contributor has insufficient communication with the team'\n indicates the presence of the Lone Wolf\n Community Smell in your experience?", col = rainbow(length(pie_values))) # questi colori sono da rivedere
 
 #LW Q2 Mean
 values <- practitioners_response$LoneWolfQ2
@@ -559,3 +553,4 @@ print(media_pesata_la_q3)
 print(dev_st_la_q3)
 pesoLA3 <- media_pesata_la_q3/dev_st_la_q3
 print(pesoLA3)
+
