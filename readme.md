@@ -32,6 +32,7 @@ the exploratory survey used to find the set of managerial figures to interview
 the main survey, aggregated in a single sheet
 - The file `analisi_rq_2.R` that contains the R scripts used to calculate the metrics used to answer the second research question
 - The file `Coding Sheet.xlsx` that contains the coding process that was followed to identify the symptoms from the literature
+- The file `Experiment Results.xlsx` that contains the results of the experiment conducted to evaluate TOAST
 
 ## 🛠️ Setup Instructions
 
